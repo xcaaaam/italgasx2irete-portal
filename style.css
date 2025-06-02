@@ -272,6 +272,12 @@ img {
   background-color: var(--light-gray);
 }
 
+/* News Section */
+.news-section {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+}
+
 .news-section h2 {
   text-align: center;
   font-size: 2.2rem;
@@ -365,6 +371,145 @@ img {
   color: var(--primary-blue);
 }
 
+/* Strategic Alliance Section */
+.strategic-alliance {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+  position: relative;
+  overflow: hidden;
+}
+
+.strategic-alliance::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/pattern-bg.png') no-repeat center center/cover;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: var(--medium-gray);
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.alliance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.alliance-card {
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.alliance-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.alliance-featured {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8e53 100%) !important;
+}
+
+.card-badge {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background: white;
+  color: var(--accent-orange);
+  padding: 0.3rem 2rem;
+  font-weight: bold;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  width: 100%;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon i {
+  background: rgba(255, 255, 255, 0.2);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alliance-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alliance-card p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.card-stats {
+  margin-top: 2rem;
+}
+
+.card-stats span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+}
+
+.card-stats p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.alliance-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.alliance-cta .cta-button {
+  background: var(--primary-blue);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
 /* Footer */
 .main-footer {
   background-color: var(--primary-blue);
